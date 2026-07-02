@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montenegrin+Gothic+One&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Montenegrin Gothic One;
+}
+
+:root{
+    --cor01: #b95252;
+    --cor02: #6d2e2e;
+    --cor03: #b47878;
+    --branca: #c5b1b1;
+}
