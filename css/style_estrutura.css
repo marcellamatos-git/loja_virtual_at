@@ -10,8 +10,32 @@
 }
 
 :root{
-    --cor01: #b95252;
-    --cor02: #6d2e2e;
-    --cor03: #b47878;
-    --branca: #c5b1b1;
+    --cor01: #cad7e2;
+    --cor02: #54586b;
+    --cor03: #7b809b;
+    --branca: #fcfcfc;
 }
+
+#geral{
+    margin: 20px;
+}
+#cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+   
+}
+
+#menu ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+#menu ul img{
+    width: 25px;
+    height: 25px;
+}
+
+
