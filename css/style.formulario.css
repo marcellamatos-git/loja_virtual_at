@@ -2,7 +2,74 @@
 
 h3{
     margin: 20px;
+    display: flex;
     justify-content: center;
-    
-    
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;  
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+#Formulário{
+width: 550px;
+min-height: 350px;
+margin: 40px auto;
+padding: 30px;
+background-color: #b8babd;
+border-radius: 10px;
+font-family: 'Courier New', Courier, monospace;
+} 
+
+label{
+    display: block;
+    margin: 10px px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+.input01{
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    width: 400px;
+
+}
+
+.input02{
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    width: 250px;
+}
+
+.input03{
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    width: 150px;
+}
+
+input::placeholder{
+    color: rgb(184, 181, 181);
+    font-size: 1.0em;
+    font-style: italic;
+
+}
+
+#btn-cadastrar, #btn-limpar{
+   position: relative;
+   left: 150px;
+    width: 150;
+    height: 30px;
+    cursor: pointer;
+    color: rgb(61, 58, 60);
+    background-color: #e2e2e2;
+   
+
+ 
+
 }
