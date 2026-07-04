@@ -134,33 +134,42 @@
 }
 
 #menu a:link {
-    font-size: 1.4em;
+   justify-content: flex-end;
+    font-size: 1.1em;
     text-transform: uppercase;
     letter-spacing: 5px;
     text-decoration: none;
     color: var(--cor02);
+    display: flex;
 }
 
 #menu a:visited {
-    font-size: 1.4em;
+    font-size: 1.1em;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     text-decoration: none;
     color: var(--cor02);
+    display: flex;
+    justify-content: flex-end;
+
 }
 
 #menu a:hover {
-    font-size: 1.6em;
+    font-size: 1.1em;
     text-transform: uppercase;
     letter-spacing: 5px;
     text-decoration: none;
     color: var(--cor03);
+    display: flex;
+    justify-content: flex-end;
 }
 
 #menu a:active {
-    font-size: 1.6em;
+    font-size: 1.1em;
     text-transform: uppercase;
     letter-spacing: 5px;
     text-decoration: none;
     color: var(--cor01);
+    display: flex;
+    justify-content: flex-end;
 }
