@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>loja virtual</title>
 
-    <link rel="stylesheet" href="css/style_estrutura.css">
+    <link rel="stylesheet" href="../css/style.formulario.css">
 </head>
 <body>
     <main id="geral">
@@ -18,33 +18,66 @@
                     <li><a href="paginas/cadastro.html">Cadastro</a></li>
                     <li><a href="paginas/sobre.html">Sobre</a></li>
                     <li><a href="paginas/login.html">Login</a></li>
-                    <li><a href="paginas/carrinho.html"><img src="imagens/carrinho.png" alt="Carrinho"></a></li>
+                    <li><a href="../index.html"><img src="../imagens/carrinho.png" alt="Carrinho"></a></li>
                 </ul>
             </nav>
         </header>
        
         <section id="Formulário">
+            <h3>Formulário</h3>
             <label for="nome">Nome</label>
-            <input type="text" name="nome" class="input01" required maxlength="60" placeholder="Nome completo">
+            <input type="text" name="nome" class="input01" required maxlength="30" placeholder="digite">
 
-            <label for="nome">Nome</label>
-            <input type="text">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" class="input01" required maxlength="30" placeholder="digite">
 
+            <label for="cpf">CPF</label>
+            <input type="number" name="cpf" class="input02" required maxlength="11" placeholder="cpf">
+
+            <label for="telefone">Telefone</label>
+            <input type="number" name="telefone" class="input02" required maxlength="9" placeholder="telefone">
+             
+            <label for="email">Email</label>
+            <input type="text" name="email" class="input01" required maxlength="60" placeholder="E-mail">
+
+            <label for="datanascimento">Data de Nascimento</label>
+            <input type="date" name="datanascimento" class="input03" required placeholder="Informe">
+
+            <label for="cep">CEP</label>
+            <input type="number" name="cep" class="input03" required maxlength="8" placeholder="CEP">
+
+            <label for="logradouro">logradouro</label>
+            <input type="text" name="logradouro" class="input01" required placeholder="logradouro">
+
+            <label for="numero">Numero</label>
+            <input type="number" name="numero" class="input03" required maxlength="10" placeholder="informe">
+            
+            <label for="complemento">Complemento</label>
+            <input type="text" name="complemento" class="input01" required maxlength="60" placeholder="complemento">
+
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro" class="input01" required maxlength="60" placeholder="informe">
+
+            <label for="cidade">Cidade</label>
+            <input type="text" name="cidade" class="input01" required maxlength="30" placeholder="informe">
+
+            <label for="estado">Estado</label>
+            <input type="text" name="estado" class="input03" required maxlength="20" placeholder="informe">
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" class="input-vlr02" maxlength="6" required placeholder="informe a senha">
+
+
+            <input type="radio" name="notificacoes" id="notificacoes" class="input-op" value="N"> Deseja receber nossas ofertar por email e pelo Whatsap
         </section>
 
-
-        
-z
-        
-
+        <button type="submit" id="btn-cadastrar">Cadastrar</button>
+            <button type="reset" id="btn-limpar">Limpar</button>
 
         <footer id="rodape">
             <h2>&copy 2026 Gamer S.A Todos os direitos reservados</h2>
             <p>formas de pagamento: Pix, Cartões de Débito e Crédito</p>
         </footer>
-
-
-    
     </main>
 </body>
 </html>
