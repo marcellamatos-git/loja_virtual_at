@@ -59,19 +59,20 @@
 #pesquisa{
     width: 700px;
     height: 80px;
-    background-color: #a5a7aa;
+    background-color: #d1d3d4;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 40px auto;
     border-radius: 15px;
     box-shadow: 0 5px 15px ;
+    transition: .4s;
 }
 
 #pesquisa input{
     width: 600px;
     height: 45px;
-    background-color: #d4d6dd;
+    background-color: #e2e3e9;
     border-radius: 8px;
     padding-left: 20px;
     font-size: 16px;
@@ -79,6 +80,7 @@
     outline: none;
     border: 2px solid #202020;
     box-shadow: 0 5px 10px;
+
 }
 
 #pesquisa input::placeholder{
@@ -86,8 +88,6 @@
     font-style: italic;
     color: #a5a7aa;
 }
-
-/*cards*/
 
 #cards{
    display: grid;
@@ -176,48 +176,47 @@
     justify-content: center;
 }
 
-#menu a:link {
-   justify-content: flex-end;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    text-decoration: none;
-    color: var(--cor02);
-    display: flex;
-    background-color: #c9caca;
 
+#menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
 }
 
-#menu a:visited {
-    font-size: 1.1em;
+
+#menu a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
     color: var(--cor02);
-    display: flex;
-    justify-content: flex-end;
-
+    background: #f4f4f4;
+    transition: all .3s ease;
 }
 
-#menu a:hover {
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    text-decoration: none;
-    color: var(--cor03);
-    display: flex;
-    justify-content: flex-end;
-    background-color: #817f7fe0;
+#menu a:visited{
+    color: var(--cor02);
+}
+
+
+#menu a:hover{
+    background: var(--cor03);
+    color: white;
     transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
 }
 
 
-#menu a:active {
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    text-decoration: none;
-    color: var(--cor01);
-    display: flex;
-    justify-content: flex-end;
+#menu a:active{
+    transform: scale(.96);
+    background: var(--cor01);
+    color: white;
 }
