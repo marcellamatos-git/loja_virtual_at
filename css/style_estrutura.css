@@ -141,6 +141,8 @@
     text-decoration: none;
     color: var(--cor02);
     display: flex;
+    background-color: #c9caca;
+
 }
 
 #menu a:visited {
@@ -162,7 +164,10 @@
     color: var(--cor03);
     display: flex;
     justify-content: flex-end;
+    background-color: #817f7fe0;
+    transform: translateY(-3px);
 }
+
 
 #menu a:active {
     font-size: 1.1em;

@@ -18,6 +18,8 @@ padding: 30px;
 background-color: #b8babd;
 border-radius: 10px;
 font-family: 'Courier New', Courier, monospace;
+margin-top: 0px;
+box-shadow: 0 3px 8px;
 } 
 
 label{
@@ -69,7 +71,32 @@ input::placeholder{
     color: rgb(61, 58, 60);
     background-color: #e2e2e2;
    
+}
 
- 
+#menu {
+    background-color: #c6c7c7;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px; 
+}
 
+#menu a:link{
+    text-decoration: none;
+    color: #0c0c0c;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+
+}
+
+#menu a:hover{
+    background-color: #f1f1f1;
+    transform: translateY(-3px);
 }
