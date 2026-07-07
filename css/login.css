@@ -1,0 +1,135 @@
+@import url(../css/style_estrutura.css);
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#dcdcdc;
+    color:#333;
+}
+
+
+header{
+    background:#ffffff;
+    color:rgb(43, 42, 42);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+header nav ul li img{
+    width: 40px;
+    height: 40px;
+    background-color: #2d2d2d;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:rgb(49, 48, 48);
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover,
+.ativo{
+    color:#666565;
+}
+
+nav a:hover{
+    background-color: #838080;
+    transform: translateY(-3px);
+    border-radius: 8px;
+}
+
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:85vh;
+}
+
+.login{
+    background:rgb(164, 165, 165);
+    width:380px;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 0 20px rgba(0,0,0,.2);
+}
+
+.login h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.login p{
+    text-align:center;
+    margin-bottom:30px;
+    color:#777;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-bottom:5px;
+    font-weight:bold;
+    color:#555;
+}
+
+input{
+    margin-bottom:20px;
+    padding:12px;
+    border:1px solid #bbb;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+}
+
+input:focus{
+    border:1px solid #555;
+}
+
+button{
+    background:#4b4b4b;
+    color:white;
+    border:none;
+    padding:13px;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#2d2d2d;
+}
+
+.links{
+    margin-top:20px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.links a{
+    text-decoration:none;
+    color:#555;
+    font-size:14px;
+}
+
+.links a:hover{
+    text-decoration:underline;
+}

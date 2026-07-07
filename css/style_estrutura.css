@@ -37,6 +37,12 @@
     
 }
 
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
 #menu ul{
     display: flex;
     gap: 35px;
