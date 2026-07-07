@@ -48,7 +48,7 @@ nav a:hover,
 nav a:hover{
     background-color: #838080;
     transform: translateY(-3px);
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 
@@ -63,7 +63,7 @@ nav a:hover{
     background:rgb(164, 165, 165);
     width:380px;
     padding:40px;
-    border-radius:12px;
+    border-radius:50px;
     box-shadow:0 0 20px rgba(0,0,0,.2);
 }
 
@@ -94,7 +94,7 @@ input{
     margin-bottom:20px;
     padding:12px;
     border:1px solid #bbb;
-    border-radius:8px;
+    border-radius:10px;
     font-size:16px;
     outline:none;
 }
@@ -108,7 +108,7 @@ button{
     color:white;
     border:none;
     padding:13px;
-    border-radius:8px;
+    border-radius:30px;
     font-size:17px;
     cursor:pointer;
     transition:.3s;
