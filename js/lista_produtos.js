@@ -4,7 +4,7 @@ const produtos = [
         descricao_produto: "Gabinete",
         valor_unitario: 80.00,
         unidade: "UN",
-        caminho_imagem: "imagens/gabinete.png",
+        caminho_imagem: "..imagens/gabinete.png",
         id_secao: 1,
         secao: "Gabinetes"
     },
@@ -13,7 +13,7 @@ const produtos = [
         descricao_produto: "Gabinete",
         valor_unitario: 80.00,
         unidade: "UN",
-        caminho_imagem: "imagens/gabinete1.png",
+        caminho_imagem: "..imagens/gabinete1.png",
         id_secao: 1,
         secao: "Gabinetes"
     },
@@ -22,7 +22,7 @@ const produtos = [
         descricao_produto: "Gabinete",
         valor_unitario: 150.00,
         unidade: "UN",
-        caminho_imagem: "imagens/gabinete2.png",
+        caminho_imagem: "..imagens/gabinete2.png",
         id_secao: 1,
         secao: "Gabinetes"
     },
@@ -31,7 +31,7 @@ const produtos = [
         descricao_produto: "Gabinete",
         valor_unitario: 110.00,
         unidade: "UN",
-        caminho_imagem: "imagens/gabinete3.png",
+        caminho_imagem: "..imagens/gabinete3.png",
         id_secao: 1,
         secao: "Gabinetes"
     },
@@ -40,7 +40,7 @@ const produtos = [
         descricao_produto: "Gabinete",
         valor_unitario: 120.00,
         unidade: "UN",
-        caminho_imagem: "imagens/gabinete4.png",
+        caminho_imagem: "..imagens/gabinete4.png",
         id_secao: 1,
         secao: "Gabinetes"
     },
@@ -49,7 +49,7 @@ const produtos = [
         descricao_produto: "Gabinete",
         valor_unitario: 110.00,
         unidade: "UN",
-        caminho_imagem: "imagens/gabinete5.png",
+        caminho_imagem: "..imagens/gabinete5.png",
         id_secao: 1,
         secao: "Gabinetes"
     },
@@ -58,7 +58,7 @@ const produtos = [
         descricao_produto: "Monitor",
         valor_unitario: 110.00,
         unidade: "UN",
-        caminho_imagem: "imagens/monitor.png",
+        caminho_imagem: "..imagens/monitor.png",
         id_secao: 2,
         secao: "Monitores"
     },
@@ -67,7 +67,7 @@ const produtos = [
         descricao_produto: "Monitor",
         valor_unitario: 110.00,
         unidade: "UN",
-        caminho_imagem: "imagens/monitor1.png",
+        caminho_imagem: "..imagens/monitor1.png",
         id_secao: 2,
         secao: "Monitores"
     },
@@ -76,7 +76,7 @@ const produtos = [
         descricao_produto: "Monitor Gamer",
         valor_unitario: 100.00,
         unidade: "UN",
-        caminho_imagem: "imagens/monitor2.png",
+        caminho_imagem: "..imagens/monitor2.png",
         id_secao: 2,
         secao: "Monitores"
     },
@@ -85,7 +85,7 @@ const produtos = [
         descricao_produto: "Kit 3 Monitores 40 Polegadas",
         valor_unitario: 300.00,
         unidade: "UN",
-        caminho_imagem: "imagens/monitor3.png",
+        caminho_imagem: "..imagens/monitor3.png",
         id_secao: 2,
         secao: "Monitores"
     }
