@@ -14,8 +14,8 @@ body{
 
 
 header{
-    background:#ffffff;
-    color:rgb(43, 42, 42);
+    background:#b8b8b8;
+    color:rgb(0, 0, 0);
     display:flex;
     justify-content:space-between;
     align-items:center;

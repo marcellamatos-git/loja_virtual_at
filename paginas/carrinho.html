@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loja virtual</title>
+
+    <link rel="stylesheet" href="../css/style.formulario.css">
+</head>
+<body>
+    <main id="geral">
+        <header id="cabeçalho">
+            <div id="logo">
+                🎮 Gamers
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="paginas/cadastro.html">Cadastro</a></li>
+                    <li><a href="paginas/sobre.html">Sobre</a></li>
+                    <li><a href="../paginas/login.html">Login</a></li>
+                    <li><a href="../carrinho.html"><img src="../imagens/carrinho.png" alt="Carrinho"></a></li>
+                </ul>
+            </nav>
+        </header>
+       
+        <section id="pesquisa">
+            <h3>Cadastro Pessoa</h3>
+        </section>
+        
+        <section id="carrinho">
+            <section id="itens-carrinho">
+                <section class="item">
+                    <div class="img-item">
+                        <img src="../imagens/cesto01.jpg" alt="cesto01">
+                    </div>
+        
+                    <div id="descricoes-itens">
+                        <div class="descricao">
+                            Cesto 01
+                        </div>
+        
+                        <div class="valores">
+                            <p>R$ 45.00 KG/p</p>
+        
+                            <div class="input-quantidade">
+                                <input type="number" name="quant01" id="quant01" class="input-item" value="1">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        
+            <div id="valores-carrinho">
+        
+                <div id="div-cep">
+                    <h2 class="titulo-valores-carrinho">CEP</h2>
+                    <div id="input-cep">
+                        <input type="text" name="input-cep" id="input-cep" class="input-cep">
+                    </div>
+                </div>
+        
+                <div id="div-calc-valor">
+                    <h2 class="titulo-valores-carrinho">Valor Total</h2>
+                    <p id="valor-total" class="valor">R$ 100,00</p>
+        
+                    <h2 class="titulo-valores-carrinho">Valor Frete</h2>
+                    <p id="valor-total" class="valor">R$ 10,00</p>
+                </div>
+        
+                <div id="div-calc-valor">
+                    <h2 class="titulo-valores-carrinho">Total a Pagar</h2>
+                    <p id="valor-pagar" class="valor">R$ 100,00</p>
+                </div>
+        
+                <button id="btn-continuar" class="btn-carrinho">Continuar Compra</button>
+                <button id="btn-finalizar" class="btn-carrinho">Finalizar Compra</button>
+        
+            </div>
+        </section>
+
+        <footer id="rodape">
+            <h2>&copy 2026 Gamer S.A Todos os direitos reservados</h2>
+            <p>formas de pagamento: Pix, Cartões de Débito e Crédito</p>
+        </footer>
+    </main>
+</body>
+</html>
