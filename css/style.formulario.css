@@ -15,7 +15,7 @@ width: 550px;
 min-height: 350px;
 margin: 40px auto;
 padding: 30px;
-background-color: #b2b2b3;
+background-color: #969696;
 border-radius: 5px;
 font-family: 'Courier New', Courier, monospace;
 margin-top: 0px;
@@ -60,7 +60,7 @@ label{
 }
 
 input::placeholder{
-    color: rgb(173, 173, 173);
+    color: rgb(167, 167, 167);
     font-size: 1.0em;
     font-style: italic;
 
