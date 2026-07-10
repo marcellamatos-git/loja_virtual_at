@@ -28,6 +28,8 @@ produtos.forEach((elem, i) => {
     divCards.appendChild(pCard)
     divCards.appendChild(h2Card)
     divCards.appendChild(btnCard)
+
+    sectionCards.appendChild(imgCard)
 })
 
 }
