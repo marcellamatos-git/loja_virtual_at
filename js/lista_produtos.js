@@ -89,4 +89,7 @@ const produtos = [
         id_secao: 2,
         secao: "Monitores"
     }
-];
+]
+
+
+export{produtos}
