@@ -4,9 +4,56 @@ const sectionCards = document.querySelector('#cards')
 
 const listarProdutos = () => {
 
+}
+
+//CHAMANDO A FUNÇÃO listarProdutos
+listarProdutos()
+
+//MONTANDO OS MENUS SEÇÕES
+const menuSecoes = () => {
+    const mapSecoes = new Map()
+
+    produtos.forEach((elem) => {
+        mapSecoes.set(elem.id_secao, elem)
+    })
+
+    const secoesFiltradas = Array.from(mapSecoes.values())
+
+    return secoesFiltradas
+}
+
+//FUNÇÃO PARA INSERIR OS MENUS NA LISTA
+const carregaSecoes = () => {
+    const ulMenuSecoes = document.querySelector('#menu-secoes')
+
+    menuSecoes().forEach((elem, i) => {
+        const liMenu = document.createElement('li')
+
+        const aMenu = document.createElement('a')
+        aMenu.setAttribute('href', '#')
+        aMenu.setAttribute('class', 'link-secao')
+        aMenu.innerHTML = elem.secao
+
+        aMenu.addEventListener('click', () => {
+            montaCards(filtroProdutos(elem.id_secao))
+        })
+
+        liMenu.appendChild(aMenu)
+        ulMenuSecoes.appendChild(liMenu)
+    })
+}
+
+carregaSecoes()
+
+const filtroProdutos = (idSecao)=>{
+    return produtos.filter(elem => elem.id_secao === idSecao)
+}
+
+const montaCards = (objProduto) => {
+
     sectionCards.innerHTML = ''
 
-produtos.forEach((elem, i) => {
+objProduto.forEach((elem, i) => {
     const divCards = document.createElement('div')
     divCards.setAttribute('class', 'card')
 
@@ -33,5 +80,3 @@ produtos.forEach((elem, i) => {
 })
 
 }
-
-listarProdutos()
