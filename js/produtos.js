@@ -31,6 +31,10 @@ const montaCards = (objProduto) => {
         btnCard.className = 'btn-add'
         btnCard.innerHTML = 'Adicionar'
 
+        btnCard.addEventListener('click', () =>{
+            window.location.href = "paginas/carrinho.html"
+        })
+
         divCards.appendChild(imgCard)
         divCards.appendChild(pCard)
         divCards.appendChild(h2Card)
@@ -39,6 +43,13 @@ const montaCards = (objProduto) => {
         sectionCards.appendChild(divCards)
     })
 }
+ const inputPesquisa = document.querySelector('#cards')
+ inputPesquisa.addEventListener('input', (evt)=>{
+    let txtInput = evt.target.value.toLowerCase()
+    montaCards(produtos.filter(elem => elem.descricao_produto.toLowerCase().includes(txtInput)))
+ })
+
+
 
 // MOSTRA TODOS OS PRODUTOS
 const listarProdutos = () => {
@@ -56,6 +67,8 @@ const menuSecoes = () => {
 
     return Array.from(mapSecoes.values())
 }
+
+
 
 // CARREGA AS SEÇÕES
 const carregaSecoes = () => {
