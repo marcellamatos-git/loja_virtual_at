@@ -43,11 +43,17 @@ const montaCards = (objProduto) => {
         sectionCards.appendChild(divCards)
     })
 }
- const inputPesquisa = document.querySelector('#cards')
- inputPesquisa.addEventListener('input', (evt)=>{
-    let txtInput = evt.target.value.toLowerCase()
-    montaCards(produtos.filter(elem => elem.descricao_produto.toLowerCase().includes(txtInput)))
- })
+ const inputPesquisa = document.querySelector('#pesquisa');
+
+ inputPesquisa.addEventListener('input', (evt) => {
+     const txtInput = evt.target.value.toLowerCase().trim();
+ 
+     const resultado = produtos.filter(produto =>
+         produto.descricao_produto.toLowerCase().includes(txtInput)
+     );
+ 
+     montaCards(resultado);
+ });
 
 
 
