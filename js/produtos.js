@@ -1,5 +1,7 @@
 import { produtos } from './lista_produtos.js'
 
+import{ addItem} from './carrinho.js'
+
 const sectionCards = document.querySelector('#cards')
 
 // FILTRA OS PRODUTOS
