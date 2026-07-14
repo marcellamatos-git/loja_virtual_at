@@ -43,9 +43,6 @@ const montaCards = (objProduto) => {
             window.location.href = "paginas/carrinho.html";
         });
 
-        btnCard.addEventListener('click', () =>{
-            window.location.href = "paginas/carrinho.html"
-        })
 
         divCards.appendChild(imgCard)
         divCards.appendChild(pCard)
