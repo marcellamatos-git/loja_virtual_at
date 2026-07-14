@@ -29,9 +29,14 @@ const montaCards = (objProduto) => {
         const h2Card = document.createElement('h2')
         h2Card.innerHTML = `R$ ${elem.valor_unitario.toFixed(2).replace('.', ',')}`
 
-        const btnCard = document.createElement('button');
-        btnCard.className = 'btn-add';
-        btnCard.innerHTML = 'Adicionar';
+        const btnCard = document.createElement("button");
+        btnCard.className = "btn-add";
+        btnCard.textContent = "Adicionar";
+        
+        btnCard.addEventListener("click", () => {
+            addItem(elem);
+            window.location.href = "paginas/carrinho.html";
+        });
         
         btnCard.addEventListener('click', () => {
             addItem(elem);
