@@ -1,124 +1,178 @@
 @import url(style_estrutura.css);
 
-h3{
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;  
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 5px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-#Formulário{
-width: 550px;
-min-height: 350px;
-margin: 40px auto;
-padding: 30px;
-background-color: #969696;
-border-radius: 5px;
-font-family: 'Courier New', Courier, monospace;
-margin-top: 0px;
-box-shadow: 0 3px 8px;
-} 
 
-.logo{
+body{
+    background:#f4f6f9;
+    color:#222;
+}
+
+#geral{
+    width:95%;
+    margin:auto;
+}
+
+
+
+#cabeçalho{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+#logo{
     font-size:28px;
     font-weight:bold;
-}
-label{
-    display: block;
-    margin: 10px px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 1.2em;
+    color:#183153;
 }
 
-.input01{
-    height: 30px;
-    padding: 5px;
-    border-radius: 10px;
-    font-size: 1.2em;
-    width: 400px;
-
+#menu ul{
+    display:flex;
+    list-style:none;
+    gap:15px;
+    align-items:center;
 }
 
-.input02{
-    height: 30px;
-    padding: 5px;
-    border-radius: 10px;
-    font-size: 1.2em;
-    width: 250px;
-}
-
-.input03{
-    height: 30px;
-    padding: 5px;
-    border-radius: 10px;
-    font-size: 1.2em;
-    width: 150px;
-}
-
-input::placeholder{
-    color: rgb(167, 167, 167);
-    font-size: 1.0em;
-    font-style: italic;
-
-}
-
-#btn-cadastrar, #btn-limpar{
-   position: relative;
-   left: 150px;
-    width: 150;
-    height: 30px;
-    cursor: pointer;
-    color: rgb(61, 58, 60);
-    background-color: #e2e2e2;
-   
-}
-
-#menu {
-    background-color: #a5a5a5;
-    height: 60px;
-    width: 100%;
-    margin-bottom: 0;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    border-radius: 10px;
-    box-shadow: 0 3px 8px; 
-}
-
-#menu a:link{
-    text-decoration: none;
-    color: #0c0c0c;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 18px;
-    border-radius: 8px;
-    transition: 0.3s;
-
+#menu a{
+    text-decoration:none;
+    color:#183153;
+    background:#fff;
+    padding:12px 20px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
 }
 
 #menu a:hover{
-    background-color: #ffffff;
-    transform: translateY(-3px);
+    background:#183153;
+    color:#fff;
 }
 
-button{
-    background:#4b4b4b;
-    color:white;
+#menu img{
+    width:28px;
+}
+
+
+
+#Formulário{
+    max-width:700px;
+    margin:40px auto;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+#Formulário h3{
+    text-align:center;
+    color:#183153;
+    font-size:36px;
+    margin-bottom:30px;
+}
+
+#Formulário label{
+    display:block;
+    margin-top:18px;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#183153;
+}
+
+#Formulário input[type="text"],
+#Formulário input[type="password"],
+#Formulário input[type="email"],
+#Formulário input[type="number"],
+#Formulário input[type="date"]{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+    transition:.3s;
+}
+
+#Formulário input:focus{
+    outline:none;
+    border-color:#183153;
+    box-shadow:0 0 8px rgba(24,49,83,.2);
+}
+
+
+.input-op{
+    margin-top:25px;
+    margin-right:10px;
+    transform:scale(1.2);
+}
+
+#btn-cadastrar,
+#btn-limpar{
+    width:100%;
+    padding:15px;
     border:none;
-    padding:13px;
-    border-radius:8px;
-    font-size:17px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
     cursor:pointer;
     transition:.3s;
-    
+    margin-top:20px;
 }
 
-button:hover{
-    background:#2d2d2d;
-    transform: translateY(-3px);
+#btn-cadastrar{
+    background:#183153;
+    color:#fff;
 }
 
+#btn-cadastrar:hover{
+    background:#295a94;
+    transform:translateY(-2px);
+}
+
+#btn-limpar{
+    background:#dc3545;
+    color:#fff;
+}
+
+#btn-limpar:hover{
+    background:#b02a37;
+    transform:translateY(-2px);
+}
+
+
+#rodape{
+    margin-top:40px;
+    background:#183153;
+    color:#fff;
+    text-align:center;
+    padding:30px;
+    border-radius:15px 15px 0 0;
+}
+
+#rodape h2{
+    margin-bottom:10px;
+}
+
+
+@media(max-width:768px){
+
+    #cabeçalho{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    #menu ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    #Formulário{
+        width:100%;
+        padding:25px;
+    }
+
+}

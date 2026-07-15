@@ -1,54 +1,61 @@
-@import url(../css/style_estrutura.css);
-
+@import url(style_estrutura.css);
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+
 }
 
 body{
-    background:#dcdcdc;
-    color:#333;
+    background:#f4f6f9;
+    color:#222;
 }
+
 
 
 header{
-    background:#b8b8b8;
-    color:rgb(0, 0, 0);
+    width:95%;
+    margin:auto;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 60px;
+    padding:20px 0;
 }
 
-header nav ul li img{
-    width: 40px;
-    height: 40px;
-    background-color: #2d2d2d;
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#183153;
 }
 
 nav ul{
     display:flex;
+    align-items:center;
+    gap:15px;
     list-style:none;
-    gap:25px;
 }
 
 nav a{
-    color:rgb(49, 48, 48);
     text-decoration:none;
+    color:#183153;
+    background:#fff;
+    padding:12px 20px;
+    border-radius:10px;
+    font-weight:bold;
     transition:.3s;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
 }
 
 nav a:hover,
-.ativo{
-    color:#888888;
+nav a.ativo{
+    background:#183153;
+    color:#fff;
 }
 
-nav a:hover{
-    background-color: #838080;
-    transform: translateY(-3px);
-    border-radius: 10px;
+nav img{
+    width:28px;
+    vertical-align:middle;
 }
 
 
@@ -56,28 +63,32 @@ nav a:hover{
     display:flex;
     justify-content:center;
     align-items:center;
-    height:85vh;
+    min-height:80vh;
 }
 
+
+
 .login{
-    background:rgb(255, 255, 255);
-    width:380px;
+    width:420px;
+    background:#fff;
     padding:40px;
-    border-radius:50px;
-    box-shadow:0 0 20px rgba(0,0,0,.2);
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
 .login h1{
     text-align:center;
+    color:#183153;
+    font-size:36px;
     margin-bottom:10px;
-    color:#444;
 }
 
 .login p{
     text-align:center;
+    color:#666;
     margin-bottom:30px;
-    color:#727272;
 }
+
 
 form{
     display:flex;
@@ -85,51 +96,94 @@ form{
 }
 
 label{
-    margin-bottom:5px;
+    margin-bottom:8px;
     font-weight:bold;
-    color:#555;
+    color:#183153;
 }
 
 input{
+    padding:14px;
     margin-bottom:20px;
-    padding:12px;
-    border:1px solid #bbb;
+    border:1px solid #ccc;
     border-radius:10px;
     font-size:16px;
-    outline:none;
+    transition:.3s;
 }
 
 input:focus{
-    border:1px solid #555;
+    outline:none;
+    border-color:#183153;
+    box-shadow:0 0 8px rgba(24,49,83,.2);
 }
 
+/* ==========================
+   BOTÃO
+========================== */
+
 button{
-    background:#4b4b4b;
-    color:white;
+    padding:15px;
     border:none;
-    padding:13px;
-    border-radius:30px;
-    font-size:17px;
+    border-radius:10px;
+    background:#183153;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
     cursor:pointer;
     transition:.3s;
 }
 
 button:hover{
-    background:#2d2d2d;
+    background:#295a94;
+    transform:translateY(-2px);
 }
 
+/* ==========================
+   LINKS
+========================== */
+
 .links{
-    margin-top:20px;
+    margin-top:25px;
     display:flex;
     justify-content:space-between;
 }
 
 .links a{
     text-decoration:none;
-    color:#555;
-    font-size:14px;
+    color:#183153;
+    font-weight:bold;
+    transition:.3s;
 }
 
 .links a:hover{
+    color:#295a94;
     text-decoration:underline;
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .login{
+        width:95%;
+        padding:30px;
+    }
+
+    .links{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
 }
