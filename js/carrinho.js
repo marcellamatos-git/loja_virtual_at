@@ -55,13 +55,11 @@ if (listaCarrinho) {
 
         listaCarrinho.innerHTML += `
             <div class="item-carrinho">
-
                 <img src="../${produto.caminho_imagem}" width="100">
-
+               
                 <h3>${produto.descricao_produto}</h3>
-
+                
                 <div class="quantidade">
-
                     <button onclick="alterarQuantidade(${produto.id_produto},-1)">-</button>
 
                     <span>${produto.quantidade}</span>
@@ -101,12 +99,8 @@ if (btnFinalizar) {
 
 }
 window.removerProduto = function(idProduto) {
-
     carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
-
     carrinho = carrinho.filter(item => item.id_produto !== idProduto);
-
     localStorage.setItem("carrinho", JSON.stringify(carrinho));
-
     location.reload();
 };
