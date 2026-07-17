@@ -54,26 +54,7 @@ if (listaCarrinho) {
         total += produto.valor_unitario * produto.quantidade;
 
         listaCarrinho.innerHTML += `
-            <div class="item-carrinho">
-                <img src="../${produto.caminho_imagem}" width="100">
-               
-                <h3>${produto.descricao_produto}</h3>
-                
-                <div class="quantidade">
-                    <button onclick="alterarQuantidade(${produto.id_produto},-1)">-</button>
-
-                    <span>${produto.quantidade}</span>
-
-                    <button onclick="alterarQuantidade(${produto.id_produto},1)">+</button>
-
-                </div>
-
-                <p>Preço: R$ ${(produto.valor_unitario * produto.quantidade).toFixed(2).replace(".", ",")}</p>
-
-                <hr>
-
-            </div>
-        `;
+            <p>R$ ${(produto.valor_unitario * produto.quantidade).toFixed(2).replace(".", ",")}</p> `
     });
 
     document.querySelector("#total").textContent = total.toFixed(2).replace(".", ",");
